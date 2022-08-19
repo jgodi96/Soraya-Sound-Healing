@@ -1,6 +1,8 @@
+import Content from "../../components/content/landing-content.component"
+import './contact.styles.scss'
 const Contact  = () => {
     return (
-        <h1>This is the Contact page</h1>
+        <Content>This is the Contact page</Content>
     )
 }
 

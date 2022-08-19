@@ -1,6 +1,8 @@
+import Content from "../../components/content/landing-content.component"
+import './schedule.styles.scss'
 const Schedule  = () => {
     return (
-        <h1>This is the schedule page</h1>
+        <Content>This is the schedule page</Content>
     )
 }
 export default Schedule

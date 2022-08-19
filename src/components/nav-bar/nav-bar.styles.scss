@@ -1,7 +1,12 @@
+
+       
+      
 .nav-container {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid rgba(126, 121, 121, 0.274);
+
 
     .link-container {
         display:flex;
@@ -13,4 +18,6 @@
 
 
 
+
 }
+

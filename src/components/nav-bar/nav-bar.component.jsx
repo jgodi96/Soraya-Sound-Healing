@@ -4,6 +4,7 @@ import './nav-bar.styles.scss'
 
 const NavBar = () => {
     return (
+        <>
         <div className="nav-container">
 
             <Logo></Logo>
@@ -17,6 +18,10 @@ const NavBar = () => {
 
 
         </div>
+        <Outlet/>
+        </>
+        
+
     )
 }
 

@@ -1,8 +1,7 @@
-
-const About  = () => {
-    return (
-        <h1>This is the about page</h1>
-    )
-}
+import Content from "../../components/content/landing-content.component";
+import "./about.styles.scss";
+const About = () => {
+  return <Content>This is the about page</Content>;
+};
 
 export default About;
