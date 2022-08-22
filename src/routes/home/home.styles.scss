@@ -1,33 +1,99 @@
-.home-container{
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  padding: 40px;
+
+  .description-content {
+    display: flex;
+    flex-direction: column;
     
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:91vh;
-    padding:40px;
-
-.description-content{
-     display: flex;
-     flex-direction: column;
-     margin-right:50px;
-     margin-bottom:100px;
-     .icons-container{
-        display:flex;
-        align-items: center;
-        align-content: center;
-
-     }
-}
-.description-content h1::after{
-    content:'';
+    h1
+    {
+        position: relative;
+        height:50px;
+        margin:0px;
+        
+        &::after{
    
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:0;
+        background-color:rgba(126, 121, 121, 0.274);
+        width:25rem;
+        height:.1rem;
+        border-radius:50px;
+        stretch: 1s ease-in-out forwards;        animation: line-
+        
+    }
 }
-.hero{
+
+    margin-bottom: 100px;
+
+    .home-button-container {
+      display: flex;
+      gap: 50px;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 10px;
+      .home-schedule-button {
+        border-radius: 10px;
+        border: 1.5px solid black;
+        background-color: #c7975de1;
+        color: black;
+
+        width: 100px;
+        height: 30px;
+      }
+      .home-learn-more-button {
+        border-radius: 10px;
+        background-color: #f1f3f500;
+        border: 1.5px solid #c7975de1;
+
+        width: 100px;
+        height: 30px;
+      }
+    }
+    .icons-container {
+      margin-top: 30px;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      gap: 90px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+      .tw:hover {
+        animation: .5s hovericon ease-in forwards;
+      }
+      .ig:hover {
+        animation: .5s hovericon ease-in forwards;
+      }
+      .yt:hover {
+        animation: .5s hovericon ease-in forwards;
+      }
+      @keyframes hovericon {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  // .description-content h1::after{
+  //     content:'';
+
+  // }
+  .hero {
     height: 50vh;
     width: 50vh;
     border-radius: 10px;
-    
-  
-}
+  }
 }
