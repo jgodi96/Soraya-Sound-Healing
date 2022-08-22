@@ -1,9 +1,12 @@
 import "./home.styles.scss";
-import MainImage from "../../assets/Main (1).jpg";
-import HowItWorks from "./how-it-works/how-it-works.components";
+// import MainImage from "../../assets/Main (1).jpg";
+ import HowItWorks from "./how-it-works/how-it-works.components";
+
 import { FiYoutube } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
+import {IoIosArrowDown} from "react-icons/io"
+import Instruments from "./instruments/instruments.components";
 
 const Home = () => {
   return (
@@ -14,15 +17,11 @@ const Home = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            
           </p>
           <div className="home-button-container">
             <button className="home-schedule-button">Schedule</button>
-            <button className="home-learn-more-button">Learn More</button>
+           
           </div>
 
           <div className="icons-container">
@@ -32,9 +31,18 @@ const Home = () => {
               
           
           </div>
+          
+          
         </div>
-        <img className="hero" src={MainImage} alt="" />
-      </div>
+        <div className="down-container">
+        <div className="down-label">Learn More</div>
+        <IoIosArrowDown className="down-icon"/>
+        </div>
+        </div>
+        
+      
+      <HowItWorks/>
+      <Instruments/>
       
     </>
   );

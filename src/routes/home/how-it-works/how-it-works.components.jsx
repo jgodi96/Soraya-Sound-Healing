@@ -2,7 +2,7 @@ import './how-it-works.styles.scss'
 import SubContent from '../../../components/content/sub-content.components'
 const HowItWorks = () => {
     return (
-        <SubContent>How it works</SubContent>
+        <div className='how-it-works-container'>How it works</div>
     )
 }
 

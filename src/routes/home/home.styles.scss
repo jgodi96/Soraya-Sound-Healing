@@ -3,39 +3,59 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 91vh;
   padding: 40px;
+  position:relative;
+ 
 
   .description-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     
     h1
     {
         position: relative;
-        height:50px;
+        
         margin:0px;
+        font-size:80px;
+        text-align: center;
+        margin-bottom:20px;
+       
         
-        &::after{
+       
+}
+h2{
+  position:relative;
+  text-align: center;
+  margin-top:0px;
+  font-size:35px;
+  height:100px;
+  &::after{
    
-        content:"";
-        position:absolute;
-        bottom:0;
-        left:0;
-        background-color:rgba(126, 121, 121, 0.274);
-        width:25rem;
-        height:.1rem;
-        border-radius:50px;
-        stretch: 1s ease-in-out forwards;        animation: line-
-        
-    }
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color:rgba(126, 121, 121, 0.274);
+    width:25rem;
+    height:.1rem;
+    border-radius:50px;
+    stretch: 1s ease-in-out forwards;        animation: line-
+    
+}
+}
+p {
+  max-width: 50ch;
+  text-align: center;
 }
 
-    margin-bottom: 100px;
+   
 
     .home-button-container {
       display: flex;
-      gap: 50px;
+      justify-content: space-evenly;
       width: 100%;
       margin-top: 10px;
       margin-left: 10px;
@@ -63,7 +83,8 @@
       display: flex;
       align-items: center;
       align-content: center;
-      gap: 90px;
+      justify-content: space-around;
+      gap:50px;
       svg {
         width: 24px;
         height: 24px;
@@ -91,9 +112,36 @@
   //     content:'';
 
   // }
-  .hero {
-    height: 50vh;
-    width: 50vh;
-    border-radius: 10px;
+  
+  .down-container{
+    position:absolute;
+    bottom:0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .down-label{
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .down-icon{
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .down-icon:hover{
+      animation: 1s down-bounce infinite
+    }
+    @keyframes down-bounce {
+      0%{
+        transform:scale(1.0);
+        
+  
+      }
+      100%{
+        transform:scale(1.1);
+      }
+      
+    }
   }
+ 
 }
