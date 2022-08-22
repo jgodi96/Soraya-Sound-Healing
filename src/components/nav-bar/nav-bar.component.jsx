@@ -1,11 +1,25 @@
+import {useState} from 'react'
 import { Outlet,Link } from "react-router-dom"
 import Logo from '../logo/logo.component'
 import './nav-bar.styles.scss'
 
 const NavBar = () => {
+
+    const [navBarScroll,setNavBarScroll] = useState(false)
+
+    const changeBackground = () => {
+
+        if(window.scrollY >= 1 ){
+            setNavBarScroll(true)
+        }
+        else{
+            setNavBarScroll(false);
+        }
+    }
+    window.addEventListener('scroll',changeBackground)
     return (
         <>
-        <div className="nav-container">
+        <div className={navBarScroll ? 'nav-container active' : 'nav-container'}>
 
             <Logo></Logo>
 

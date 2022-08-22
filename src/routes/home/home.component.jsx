@@ -11,7 +11,7 @@ import Instruments from "./instruments/instruments.components";
 const Home = () => {
   return (
     <>
-      <div className="home-container">
+      <section className="home-container">
         <div className="description-content">
           <h1>Soraya Sound Healing</h1>
           <p>
@@ -38,7 +38,7 @@ const Home = () => {
         <div className="down-label">Learn More</div>
         <IoIosArrowDown className="down-icon"/>
         </div>
-        </div>
+        </section>
         
       
       <HowItWorks/>
