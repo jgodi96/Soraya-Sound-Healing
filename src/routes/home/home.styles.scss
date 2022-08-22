@@ -121,20 +121,23 @@ p {
         height: 24px;
       }
       .tw:hover {
-        animation: .5s hovericon ease-in forwards;
+        animation: .2s hovericon forwards;
+        cursor: pointer;
       }
       .ig:hover {
-        animation: .5s hovericon ease-in forwards;
+        animation: .2s hovericon forwards;
+        cursor: pointer;
       }
       .yt:hover {
-        animation: .5s hovericon ease-in forwards;
+        animation: .2s hovericon forwards;
+        cursor: pointer;
       }
       @keyframes hovericon {
         0% {
           transform: scale(1);
         }
         100% {
-          transform: scale(1.1);
+          transform: scale(1.3);
         }
       }
     }
