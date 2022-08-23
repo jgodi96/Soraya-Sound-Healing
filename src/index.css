@@ -15,6 +15,10 @@ body {
 
   background-color: #e9ddcecc;
   
+  
+}
+body section {
+  scroll-snap-type: start;
 }
 
 code {

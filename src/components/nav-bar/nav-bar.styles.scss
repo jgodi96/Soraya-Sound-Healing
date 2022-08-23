@@ -9,9 +9,10 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    animation: .5s spreadStart ease-out;   
+    animation: .5s spreadStart ease-out forwards;   
     padding: 0px 40px;
     transition:1s;
+    z-index:1000;
 
 
     .link-container {

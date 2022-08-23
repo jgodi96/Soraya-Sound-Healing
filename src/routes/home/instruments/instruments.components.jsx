@@ -1,7 +1,7 @@
 import './instruments.styles.scss'
 const Instruments = () => {
     return (
-        <div className='instruments-container'>Instruments</div>
+        <section className='instruments-container'>Instruments</section>
     )
 }
 

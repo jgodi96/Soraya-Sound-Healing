@@ -10,7 +10,7 @@ import Instruments from "./instruments/instruments.components";
 
 const Home = () => {
   return (
-    <>
+    <div className="scroll-container">
       <section className="home-container">
         <div className="description-content">
           <h1>Soraya Sound Healing</h1>
@@ -44,7 +44,7 @@ const Home = () => {
       <HowItWorks/>
       <Instruments/>
       
-    </>
+    </div>
   );
 };
 
