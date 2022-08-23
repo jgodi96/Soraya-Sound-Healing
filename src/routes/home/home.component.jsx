@@ -7,11 +7,13 @@ import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import {IoIosArrowDown} from "react-icons/io"
 import Instruments from "./instruments/instruments.components";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="scroll-container">
       <section className="home-container">
+      
         <div className="description-content">
           <h1>Soraya Sound Healing</h1>
           <p>
@@ -19,10 +21,11 @@ const Home = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             
           </p>
-          <div className="home-button-container">
+          <Link to='/schedule' className="home-button-container">
             <button className="home-schedule-button">Schedule</button>
            
-          </div>
+          </Link>
+          
 
           <div className="icons-container">
             <FiYoutube className="yt" />
