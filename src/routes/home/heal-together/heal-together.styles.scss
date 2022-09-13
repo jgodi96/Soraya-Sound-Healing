@@ -1,0 +1,42 @@
+.instruments-container{
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position:relative;
+       
+
+        background-color: #af9b85e1;
+        .heal-title-box{
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+
+            height:5rem;
+            margin-top: 7rem;
+
+        }
+        .heal-title{
+            color:rgb(30, 29, 29);
+            font-size: 4rem;
+
+        }
+        .heal-image-container{
+
+            .heal-image{
+                height: auto;
+                max-width: 100%;
+                border-radius: 5px;
+                margin-top: 2rem;
+
+            }
+
+        }
+        .message-info{
+            text-align: center;
+    
+        }
+        
+}

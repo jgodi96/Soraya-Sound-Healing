@@ -25,7 +25,7 @@ const NavBar = () => {
 
             <div className="link-container">
             <Link to='/'>Home</Link>
-            <Link to='/schedule'>Schedule</Link>
+            <Link to='/book'>Book Now</Link>
             <Link to='/contact'>Contact</Link>
             <Link to='/about'>About</Link>
             </div>

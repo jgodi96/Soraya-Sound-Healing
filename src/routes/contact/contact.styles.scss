@@ -1,0 +1,75 @@
+.contact-page{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+    .contact-header{
+        font-size: 5rem;
+    }
+    .icon-row{
+        display: flex;
+        width: 100%;
+        max-width: 30rem ;
+        justify-content: space-evenly;
+        align-items: center;
+
+        svg{
+            font-size: 1.5rem;
+        }
+        .tw-contact:hover{
+            animation: 0.2s hoverIconContact forwards;
+          cursor: pointer;
+
+        }
+        .ig-contact:hover{
+            animation: 0.2s hoverIconContact forwards;
+            cursor: pointer;
+
+        }
+        .yt-contact:hover{
+            animation: 0.2s hoverIconContact forwards;
+            cursor: pointer;
+
+        }
+        @keyframes hoverIconContact {
+            0% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1.2);
+            }
+          }
+        
+    }
+    
+    .contact-card{
+        display:flex;
+        width:100%;
+        max-width: 30rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:3rem;
+        background-color: rgb(214, 199, 179);
+        border-radius: 4px;
+        padding:2rem;
+        border:1px solid rgb(171, 157, 137);
+
+
+       
+        .area-container{
+            width:100%;
+        .text-area{
+            width:100%;
+            resize: none;
+            background-color: rgb(231, 225, 218);
+            padding:.5rem;
+        }
+    }
+    }
+
+    
+}
