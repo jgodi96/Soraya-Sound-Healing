@@ -2,6 +2,7 @@ import "./heal-together.styles.scss";
 import HealImg from "../../../assets/heal.jpg";
 import Button from "../../../components/button/button.components";
 import Footer from "../../../components/footer/footer.components";
+import { Link } from "react-router-dom";
 const HealTogether = () => {
   return (
     <section className="instruments-container">
@@ -14,7 +15,9 @@ const HealTogether = () => {
       <h2 className="message-info">
         Send me a message to connect and ask any inquiries.
       </h2>
+      <Link to="contact">
       <Button buttonType="contact">Contact</Button>
+      </Link>
       <Footer />
     </section>
   );
