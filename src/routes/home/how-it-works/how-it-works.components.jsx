@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const HowItWorks = () => {
   return (
     <section className="how-it-works-page">
-    <div className="how-it-works-container">
+    <div className="how-it-works-container" >
 
       <div className="first-row-how">
-        <div className="first-image-how">
-          <img className="first-image" src={firstAbout} />
+        <div className="first-image-how" data-aos="fade-right" data-aos-duration="500">
+          <img className="first-image" src={firstAbout}/>
         </div>
-        <div className="first-how-description">
+        <div className="first-how-description" data-aos="fade-left">
           <h1 className="first-how-title">Description</h1>
 
           <p>
@@ -26,8 +26,8 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="second-row-how">
-        <div className="second-how-description">
-          <h1 className="second-how-title">Description</h1>
+        <div className="second-how-description" data-aos="fade-right">
+          <h1 className="second-how-title" >Description</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -38,7 +38,7 @@ const HowItWorks = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="second-image-how">
+        <div className="second-image-how" data-aos="fade-left">
           <img className="second-image" src={secondAbout} />
         </div>
       </div>

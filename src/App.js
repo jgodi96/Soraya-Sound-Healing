@@ -6,10 +6,16 @@ import Contact from "./routes/contact/contact.component";
 import About from "./routes/about/about.component";
 import Book from "./routes/book/book.component";
 import './app.styles.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const App = () => {
   return (
-
+   <>
+     {AOS.init()}
+  
       <div className="app">
+      
       <Routes>
       
         <Route path="/" element={<NavBar />}>
@@ -22,6 +28,7 @@ const App = () => {
        
       </Routes>
       </div>
+      </>
    
   );
 };
