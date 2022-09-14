@@ -8,8 +8,8 @@ const About = () => {
      
         <div className="about-title-container">
         <div className="name-container">
-        {/* <h1 data-aos="fade" data-aos-delay="250" data-aos-duration="500" >Soraya</h1> */}
-        {/* <h1 data-aos="fade"  data-aos-delay="500" data-aos-duration="500">Godinez</h1> */}
+        <h1  >Soraya</h1>
+        <h1 >Godinez</h1>
 
         </div>
           
