@@ -4,9 +4,11 @@
         flex-direction: column;
         width: 100%;
         position:relative;
+        gap:2rem;
        
 
         background-color: #af9b85e1;
+        padding: 5rem;
         .heal-title-box{
             width:100%;
             display:flex;
@@ -15,7 +17,7 @@
 
 
             height:5rem;
-            margin-top: 7rem;
+            
 
         }
         .heal-title{
@@ -29,7 +31,7 @@
                 height: auto;
                 max-width: 100%;
                 border-radius: 5px;
-                margin-top: 2rem;
+                
 
             }
 

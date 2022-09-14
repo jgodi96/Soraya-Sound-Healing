@@ -1,7 +1,7 @@
 import "./home.styles.scss";
 // import MainImage from "../../assets/Main (1).jpg";
 import HowItWorks from "./how-it-works/how-it-works.components";
-import LandingContent from "../../components/content/landing-content/landing-content.component";
+
 import { FiYoutube } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
@@ -17,7 +17,7 @@ const Home = () => {
       <section className="home-container">
         <div className="description-content">
           <h1 className="home-title">Soraya Sound Healing</h1>
-          <h2>Reiki + Sound Healing</h2>
+          <h2 className="reiki-title">Reiki + Sound Healing</h2>
           <p>
             I welcome you just the way you are, honor where you've been, and
             together we realign you with your Highest Self
