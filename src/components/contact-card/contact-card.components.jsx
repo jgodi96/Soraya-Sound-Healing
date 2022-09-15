@@ -41,7 +41,7 @@ const ContactCard = () => {
         ></textarea>
       </div>
 
-      <Button>Submit</Button>
+      <Button buttonType="contact">Submit</Button>
     </form>
     </div>
   );

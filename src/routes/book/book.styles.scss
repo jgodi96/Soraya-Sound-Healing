@@ -3,6 +3,7 @@
     width:100%;
     align-items: center;
     justify-content: center;
+    flex-grow:1;
     
     
 
@@ -13,6 +14,9 @@
         align-items: center;
         flex-direction: column;
         gap:2rem;
+        .book-title{
+            font-size: 5.5rem;
+        }
 
         .react-calendar{
             width:100%;
@@ -50,9 +54,10 @@
 
             .react-calendar__viewContainer{
                 .react-calendar__month-view__weekdays{
+                    
                    
                     padding-top: 1rem;
-                    
+                  
                     > div{
                         text-align: center;
                         font-size: 1.5rem;
@@ -65,12 +70,21 @@
                 }
 
                 .react-calendar__month-view__days{
+                    .react-calendar__tile--active{
+                        
+                        background-color: rgb(158, 145, 127);
+                    }
                    > button{
+
                     padding:20px;
                     font-size: 1.5rem;
                    border: none;
                     background: none;
+                    border-radius: 50px;
 
+                   }
+                   > button:hover:enabled{
+                    background-color: rgb(196, 182, 162);
                    }
                 }
             }

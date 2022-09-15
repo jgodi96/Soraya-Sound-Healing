@@ -3,7 +3,13 @@ import { Outlet,Link } from "react-router-dom"
 import Logo from '../logo/logo.component'
 import './nav-bar.styles.scss'
 
-const NavBar = () => {
+export const NAV_TYPES_CLASSES = {
+    main: "main-nav-container",
+    other:"other-nav-container"
+    
+  };
+
+const NavBar = ({navType='main'}) => {
 
     // const [navBarScroll,setNavBarScroll] = useState(false)
 
@@ -19,7 +25,7 @@ const NavBar = () => {
     // window.addEventListener('scroll',changeBackground)
     return (
         <>
-        <div className='nav-container'>
+        <div className={NAV_TYPES_CLASSES[navType]}>
 
             <Logo></Logo>
 

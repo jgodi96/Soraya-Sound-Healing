@@ -1,11 +1,39 @@
 
        
       
-.nav-container {
+.main-nav-container {
     
     position: fixed;
     top:0;
     width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: .5s spreadStart ease-out forwards;   
+    padding: 0px 40px;
+    transition:1s;
+    background-color:rgba(255, 255, 255, 0);
+    padding: 1.5rem 2rem;
+    z-index: 99;
+
+
+
+    .link-container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:50px;
+
+    }
+    
+
+
+
+
+}
+
+.other-nav-container {
+    
     display:flex;
     justify-content: space-between;
     align-items: center;

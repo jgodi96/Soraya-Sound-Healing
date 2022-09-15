@@ -1,4 +1,5 @@
 import React from 'react'
+import './input-column.styles.scss'
 
 const InputColumn = ({children}) => {
   return (

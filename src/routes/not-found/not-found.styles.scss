@@ -1,17 +1,38 @@
-.not-found-container{
-    display: flex;
-    flex-direction: column;
+
+
+.error-page{
+    display:flex;
+    width:100%;
     align-items: center;
     justify-content: center;
+    gap:2rem;
+    flex-grow: 1;
+    // flex-wrap: wrap;
+    
 
-    .number-error{
+    .error-content{
+        display:flex;
+        width:100%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        .number-error{
+            font-size: 10rem;
 
-    }
-    .error-type{
+        }
+        .error-type{
+            font-size: 5rem;
+    
+        }
+        .go-home{
+            
+        }
 
-    }
-    .go-home{
-        
-    }
+
+
+
+}
+
+    
 
 }

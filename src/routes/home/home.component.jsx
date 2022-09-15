@@ -9,8 +9,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import Instruments from "./heal-together/heal-together.components";
 import { Link } from "react-router-dom";
 import Button from "../../components/button/button.components";
+import {useEffect} from 'react'
+import { useAppContext } from "../../context/app-context";
 
 const Home = () => {
+  const {setMainNav} = useAppContext()
+  useEffect(()=>{
+    setMainNav();
+  },[])
   return (
   <>
   <div className="home-wrapper">
@@ -22,7 +28,7 @@ const Home = () => {
             I welcome you just the way you are, honor where you've been, and
             together we realign you with your Highest Self
           </p>
-          <Link to="/schedule" className="home-button-container">
+          <Link to="/book" className="home-button-container">
             <Button buttonType="main">Book Now</Button>
           </Link>
 
