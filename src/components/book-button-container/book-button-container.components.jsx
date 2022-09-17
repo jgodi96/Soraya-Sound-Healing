@@ -1,29 +1,10 @@
-import React from 'react'
-import Button from '../button/button.components'
-import './book-button-container.styles.scss'
+import React from "react";
+import Button from "../button/button.components";
+import "./book-button-container.styles.scss";
+import { useAppContext } from "../../context/app-context";
 
-const AvailableTimes = [
-    {
-        id:1,
-        time:"10:30am"
-    },
-    {   id:2,
-        time:"12:30pm"
-    }
-]
-const BookButtonContainer = () => {
-  return (
-    <div className="book-button-container">
+const BookButtonContainer = ({ children }) => {
+  return <div className="book-button-container">{children}</div>;
+};
 
-      {  AvailableTimes.map(({id,time})=>{
-        return(
-            <Button buttonType = 'bookTime' key={id}>{time}</Button>
-        )
-            
-        })}
-        
-    </div>
-  )
-}
-
-export default BookButtonContainer
+export default BookButtonContainer;

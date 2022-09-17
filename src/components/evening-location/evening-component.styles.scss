@@ -1,0 +1,23 @@
+.evening-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .evening-location-container{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap:2rem;
+        padding:2rem;
+
+
+       
+
+    }
+    .evening-img{
+        width: 100%;
+        height:auto;
+    }
+}

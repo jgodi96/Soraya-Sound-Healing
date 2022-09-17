@@ -4,9 +4,10 @@ import InformationColumn from "../../components/information-column/information-c
 import { useAppContext } from "../../context/app-context";
 import { useEffect } from "react";
 const Contact = () => {
-  const { setOtherNav } = useAppContext();
+  const { setOtherNav,clearButton } = useAppContext();
   useEffect(() => {
     setOtherNav();
+    clearButton()
   }, []);
   return (
     <div className="contact-page">

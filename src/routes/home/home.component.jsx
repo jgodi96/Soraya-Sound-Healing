@@ -13,9 +13,10 @@ import {useEffect} from 'react'
 import { useAppContext } from "../../context/app-context";
 
 const Home = () => {
-  const {setMainNav} = useAppContext()
+  const {setMainNav,clearButton} = useAppContext()
   useEffect(()=>{
     setMainNav();
+    clearButton();
   },[])
   return (
   <>

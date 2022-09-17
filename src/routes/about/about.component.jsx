@@ -4,9 +4,10 @@ import Headshot from "../../assets/headshot.png";
 import { useAppContext } from "../../context/app-context";
 import { useEffect } from "react";
 const About = () => {
-  const { setOtherNav } = useAppContext();
+  const { setOtherNav,clearButton } = useAppContext();
   useEffect(() => {
     setOtherNav();
+    clearButton()
   }, []);
   return (
     <div className="about-page">
