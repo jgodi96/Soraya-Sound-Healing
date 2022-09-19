@@ -5,6 +5,12 @@ import {
   CLEAR_CLASS,
   SET_BUTTON_TOGGLE,
   CLEAR_BUTTON_TOGGLE,
+  ADD_CURRENT_CLASS,
+  CLEAR_CURRENT_CLASS,
+  ADD_BILLING_INFORMATION,
+  CLEAR_BILLING_INFORMATION,
+  START_SUCCESS_MESSAGE,
+  END_SUCCESS_MESSAGE,
 } from "./actions";
 const reducer = (state, action) => {
   if (action.type === MAIN_NAV) {
@@ -24,6 +30,24 @@ const reducer = (state, action) => {
   }
   if (action.type === CLEAR_BUTTON_TOGGLE) {
     return { ...state, setButtonToggle: "" };
+  }
+  if (action.type === ADD_CURRENT_CLASS) {
+    return { ...state, currentClass: action.payload.classInfo };
+  }
+  if (action.type === CLEAR_CURRENT_CLASS) {
+    return { ...state, currentClass: "" };
+  }
+  if (action.type === ADD_BILLING_INFORMATION) {
+    return { ...state, billingInformation: action.payload.billingInfo };
+  }
+  if (action.type === CLEAR_BILLING_INFORMATION) {
+    return { ...state, billingInformation: {} };
+  }
+  if (action.type === START_SUCCESS_MESSAGE) {
+    return { ...state, showMessage: true };
+  }
+  if (action.type === END_SUCCESS_MESSAGE) {
+    return { ...state, showMessage: false };
   }
 };
 export default reducer;

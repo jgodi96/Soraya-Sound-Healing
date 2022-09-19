@@ -4,13 +4,21 @@ import InformationColumn from "../../components/information-column/information-c
 import { useAppContext } from "../../context/app-context";
 import { useEffect } from "react";
 const Contact = () => {
-  const { setOtherNav,clearButton } = useAppContext();
+  const {
+    setOtherNav,
+    clearButton,
+    clearCurrentClass,
+    clearBillingInformation,
+  } = useAppContext();
   useEffect(() => {
     setOtherNav();
-    clearButton()
+    clearCurrentClass();
+    clearBillingInformation();
+    clearButton();
   }, []);
   return (
     <div className="contact-page">
+    
       {/* <div className="contact-content"> */}
       <ContactCard />
       <InformationColumn />

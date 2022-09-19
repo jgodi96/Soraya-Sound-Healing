@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import CustomCalendar from "../../components/custom-calendar/custom-calendar.components";
 import AfternoonLocation from "../../components/afternoon-location/afternoon-location.component";
 import EveningLocation from "../../components/evening-location/evening-location.components";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AvailableTimes = [
   {
@@ -24,6 +26,9 @@ const Book = () => {
     classesBooked,
     setButton,
     setButtonToggle,
+    addCurrentClass,
+    clearCurrentClass,
+    clearBillingInformation,
   } = useAppContext();
 
   const [classes, setClasses] = useState(classesBooked);
@@ -35,9 +40,11 @@ const Book = () => {
   const [newTime, setNewTime] = useState("");
   const [newDate, setNewDate] = useState("");
 
+  let navigate = useNavigate();
   useEffect(() => {
     setOtherNav();
-
+    clearCurrentClass();
+    clearBillingInformation();
     clearButton();
   }, []);
 
@@ -78,10 +85,13 @@ const Book = () => {
   const nextHandler = (e) => {
     e.preventDefault();
 
-    addClass([...classes, newClass]);
+    let path = "checkout";
 
+    addClass([...classes, newClass]);
+    addCurrentClass(newClass);
     setNewClass("");
     setUpdate(!update);
+    navigate(path);
   };
 
   const check = (e) => {
@@ -144,7 +154,7 @@ const Book = () => {
               </div>
             </div>
           )}
-
+          {/* <Link to="checkout" className={buttonActive ? "enabled" : "disabled"}> */}
           <Button
             className={
               buttonActive ? "contact-button_active" : "contact-button_disabled"
@@ -155,6 +165,7 @@ const Book = () => {
           >
             Next
           </Button>
+          {/* </Link> */}
           {/* <button onClick={check}>Check</button> */}
         </div>
 

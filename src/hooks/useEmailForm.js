@@ -1,8 +1,8 @@
 // import { init } from "emailjs-com";
-import { useState} from "react";
-import { sendMessageForm } from "../utils/email-js/email";
-import { useAppContext } from "../context/appContext";
-const useForm = (validate) => {
+import { useState } from "react";
+// import { sendMessageForm } from "../utils/email-js/email";
+import { useAppContext } from "../context/app-context";
+const useEmailForm = (validate) => {
   const initialState = {
     name: "",
     phone: "",
@@ -10,7 +10,7 @@ const useForm = (validate) => {
     subject: "",
     message: "",
   };
-  const { startRequest, endRequest,showSuccessMessage } = useAppContext();
+  const { showSuccessMessage } = useAppContext();
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
 
@@ -28,13 +28,10 @@ const useForm = (validate) => {
     setErrors(validate(values));
 
     if (Object.keys(getErrors).length === 0) {
-      startRequest();
-      setTimeout(() => {
-        sendMessageForm(formCurrent);
-        showSuccessMessage()
-        endRequest();
-        resetValues();
-      }, 1000);
+      // sendMessageForm(formCurrent);
+      showSuccessMessage();
+
+      resetValues();
     } else {
       resetValues();
     }
@@ -46,4 +43,4 @@ const useForm = (validate) => {
   return { handleChange, values, handleSubmit, errors };
 };
 
-export default useForm;
+export default useEmailForm;

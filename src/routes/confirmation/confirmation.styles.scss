@@ -1,0 +1,15 @@
+.confirmation-page{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    flex-grow: 1;
+    .checkout-line{
+        height:1px;
+        width:100%;
+        max-width: 30rem;
+        background-color: rgb(171, 157, 137)
+    }
+}

@@ -94,7 +94,10 @@
             font-size: 1.2rem;
         
           }
-          
+          a.disabled{
+            pointer-events: none;
+            cursor:default;
+          }
           .contact-button_active:hover {
             transform: scale(1.02);
             box-shadow: 2px;

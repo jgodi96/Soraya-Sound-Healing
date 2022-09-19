@@ -11,17 +11,17 @@ import "aos/dist/aos.css";
 import { useAppContext } from "./context/app-context";
 import { useEffect } from "react";
 import NotFound from "./routes/not-found/not-found";
+import Checkout from "./routes/checkout/checkout.components";
+import Confirmation from "./routes/confirmation/confirmation.components";
 
 const App = () => {
-  useEffect(()=>{
-    AOS.init()
-  },[])
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const { isMainNav } = useAppContext();
   return (
     <>
-     
-
       <div className="app">
         <Routes>
           <Route
@@ -32,7 +32,12 @@ const App = () => {
             <Route path="book" element={<Book />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NotFound/>}/>
+            <Route path="book/checkout" element={<Checkout />} />
+            <Route
+              path="book/checkout/confirmation"
+              element={<Confirmation />}
+            />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </div>
