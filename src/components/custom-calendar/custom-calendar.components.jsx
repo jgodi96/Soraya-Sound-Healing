@@ -22,6 +22,14 @@ const CustomCalendar = ({
     setAfternoonButton(false);
     setButtonActiveActive(false);
   };
+  const onViewChange = () => {
+    console.log("viewchange");
+
+    clearButton();
+    setEveningButton(false);
+    setAfternoonButton(false);
+    setButtonActiveActive(false);
+  };
   const disabledDates = [date];
   function tileDisabled({ date, view }) {
     // Disable tiles in month view only
@@ -34,7 +42,13 @@ const CustomCalendar = ({
     return differenceInCalendarDays(a, b) === 0;
   }
   return (
-    <Calendar onChange={onChange} value={date} tileDisabled={tileDisabled} />
+    <Calendar
+      onChange={onChange}
+      value={date}
+      tileDisabled={tileDisabled}
+      onActiveStartDateChange={onViewChange}
+      // onClickYear={onChange}
+    />
   );
 };
 
