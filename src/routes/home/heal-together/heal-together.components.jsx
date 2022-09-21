@@ -12,9 +12,9 @@ const HealTogether = () => {
       <div className="heal-image-container">
         <img className="heal-image" src={HealImg} />
       </div>
-      <h2 className="message-info">
+      <div className="message-info">
         Send me a message to connect and ask any inquiries.
-      </h2>
+      </div>
       <Link to="contact">
       <Button buttonType="contact">Contact</Button>
       </Link>

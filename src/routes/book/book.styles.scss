@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+  
 
 .book-page-content{
     display:flex;
@@ -20,6 +21,7 @@
     .book-content{
         display:flex;
         width:100%;
+     
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
@@ -28,6 +30,7 @@
         gap:2rem;
         .book-title{
             font-size: 5.5rem;
+            text-align: center;
         }
         .book-time-button_active{
             border-radius: 10px;
@@ -148,4 +151,32 @@
 
     
 }
+}
+@media (max-width:1000px){
+
+  .book-page{
+    .book-page-content{
+      flex-direction: column;
+      .book-content{
+        border-right:none;
+        .book-title{
+          font-size:4.5rem;
+        }
+      }
+      .location-content{
+    
+
+        .location-title{
+            font-size: 4.5rem;
+            
+        }
+        .location-container{
+          
+        }
+    }
+    }
+  
+  }
+
+ 
 }

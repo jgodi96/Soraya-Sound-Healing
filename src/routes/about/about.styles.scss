@@ -31,22 +31,39 @@
         flex-direction: column;
         font-size: 4rem;
     }
-    > img {
-        width:100%;
-        max-width: 20rem;
-        height:auto;
-        
+    .img-container {
+
+        > img{
+
+            width:100%;
+            max-width: 20rem;
+            height:auto;
+            
+        }
 
     }
     
 
 }
 .about-p{
-    width: 75ch;
+    max-width: 75ch;
+    font-size:1.3rem;
 }
     
     
 
     
 }
+}
+@media (max-width:480px){
+    .about-page{
+        .about-flex-container{
+        .about-title-container{
+          .name-container{
+           font-size:1.5rem;
+          }
+        }
+    }
+}
+
 }

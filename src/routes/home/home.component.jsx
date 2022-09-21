@@ -32,10 +32,10 @@ const Home = () => {
           <div className="description-content">
             <h1 className="home-title">Soraya Sound Healing</h1>
             <h2 className="reiki-title">Reiki + Sound Healing</h2>
-            <p>
+            <div className="p-wrapper">
               I welcome you just the way you are, honor where you've been, and
               together we realign you with your Highest Self
-            </p>
+            </div>
             <Link to="/book" className="home-button-container">
               <Button buttonType="main">Book Now</Button>
             </Link>

@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import NotFound from "./routes/not-found/not-found";
 import Checkout from "./routes/checkout/checkout.components";
 import Confirmation from "./routes/confirmation/confirmation.components";
+import MobileNav from "./components/mobile-nav/mobile-nav";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,8 @@ const App = () => {
   return (
     <>
       <div className="app">
+      
+        <MobileNav />
         <Routes>
           <Route
             path="/"

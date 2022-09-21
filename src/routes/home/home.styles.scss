@@ -3,14 +3,18 @@
   display: flex;
   flex-direction: column;
   width:100%;
+  overflow-x: hidden;
   .home-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 40px;
     position: relative;
     min-height:100vh;
+    
+    flex-direction: column;
+   
+
     
    
 
@@ -18,12 +22,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 15px;
+      justify-content: center;
+      
+     
       gap:1rem;
+      width: 100%;
+      padding:1rem;
+      flex-grow: 1;
 
       .home-title {
         position: relative;
-
+      
         margin: 0px;
         //font-size: 80px;
         font-size: 5.5rem;
@@ -40,6 +49,12 @@
             opacity: 100%;
           }
         }
+      }
+      .p-wrapper{
+        max-width: 75ch ;
+        font-size:1.2rem;
+        text-align: center;
+        
       }
       .reiki-title{
 
@@ -68,7 +83,7 @@
 
       // }
       // }
-      p {
+      .p-wrapper {
         max-width: 50ch;
         text-align: center;
         animation: top-to-bottom 0.5s ease-out forwards;
@@ -149,16 +164,17 @@
     // }
 
     .down-container {
-      position: absolute;
-      bottom: 0;
+     
 
       display: flex;
       flex-direction: column;
       align-items: center;
-      opacity: 0%;
       animation: top-to-bottom 0.5s ease-out forwards;
       opacity: 0%;
       animation-delay: 2s;
+      width:100%;
+  
+    
 
       .down-label {
         font-size: 20px;
@@ -179,17 +195,21 @@
         }
       }
     }
-    // .down-container:hover{
-    //   animation: .1s learn-more-hover
-    // }
-    // @keyframes learn-more-hover {
-    //   0%{
-    //     transform: scale(1);
-    //   }
-    //   100%{
-    //     text-replace: scale(1.1);
-    //   }
-
-    // }
+   
   }
+}
+@media (max-width:550px) {
+
+  .home-wrapper{
+    .home-container {
+   .description-content {
+    
+   .home-title {
+    font-size:4.5rem;
+   }
+  }
+}
+}
+
+  
 }

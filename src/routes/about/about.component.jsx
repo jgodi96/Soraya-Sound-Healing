@@ -24,11 +24,12 @@ const About = () => {
             <h1>Soraya</h1>
             <h1>Godinez</h1>
           </div>
-
-          <img src={Headshot}></img>
+          <div className="img-container">
+            <img src={Headshot}></img>
+          </div>
         </div>
 
-        <p className="about-p">
+        <div className="about-p">
           is a multi-talented artist living in Los Angeles, California. Soraya
           has performed Sound Baths and Sound Healings in California and around
           the US. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -43,7 +44,7 @@ const About = () => {
           sed. Ut enim blandit volutpat maecenas. Sed arcu non odio euismod
           lacinia at quis. Tristique senectus et netus et malesuada fames ac
           turpis egestas.
-        </p>
+        </div>
       </div>
     </div>
   );

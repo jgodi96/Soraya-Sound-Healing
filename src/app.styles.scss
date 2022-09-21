@@ -4,5 +4,16 @@
     width:100%;
     min-height:100%;
 
+    @media (max-width:550px) {
+        .main-nav-container{
+            display: none;
+        }
+        .other-nav-container{
+            display:none
+        }
+        
+    }
+    
+    
     
 }

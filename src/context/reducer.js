@@ -11,6 +11,8 @@ import {
   CLEAR_BILLING_INFORMATION,
   START_SUCCESS_MESSAGE,
   END_SUCCESS_MESSAGE,
+  MOBILE_NAV_SHOW,
+  MOBILE_NAV_HIDE,
 } from "./actions";
 const reducer = (state, action) => {
   if (action.type === MAIN_NAV) {
@@ -48,6 +50,12 @@ const reducer = (state, action) => {
   }
   if (action.type === END_SUCCESS_MESSAGE) {
     return { ...state, showMessage: false };
+  }
+  if (action.type === MOBILE_NAV_SHOW) {
+    return { ...state, showMobileNav: true };
+  }
+  if (action.type === MOBILE_NAV_HIDE) {
+    return { ...state, showMobileNav: false };
   }
 };
 export default reducer;

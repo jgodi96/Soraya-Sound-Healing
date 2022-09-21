@@ -5,6 +5,7 @@
     justify-content: center;
     gap:2rem;
     flex-grow: 1;
+ 
     // flex-wrap: wrap;
     
 
@@ -23,3 +24,11 @@
 
     
 }
+@media (max-width:780px){
+
+  .contact-page{
+    flex-direction: column;
+  }
+   
+    
+   }

@@ -8,15 +8,18 @@
     gap: 1rem;
     padding:2rem;
     // border-right:1px solid rgb(171, 157, 137);
+    
  
     
     .contact-header{
         font-size: 5.5rem;
+        text-align: center;
     }
 .contact-card{
     display:flex;
     width:100%;
     max-width: 50rem;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -25,6 +28,8 @@
     border-radius: 4px;
     padding:2rem;
     border:1px solid rgb(171, 157, 137);
+    
+    
 
     
 
@@ -48,3 +53,18 @@
 }
 }
 }
+@media (max-width:780px){
+
+    .contact-card-container{
+        
+        padding:0;
+        .contact-header{
+            font-size:4rem;
+        }
+     .contact-card{
+         
+     }
+    }
+   
+    
+   }

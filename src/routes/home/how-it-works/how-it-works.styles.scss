@@ -38,11 +38,10 @@
               
         }
         .first-how-description{
-                margin-left:5rem;
+               padding:2rem;
+                max-width: 75ch;
                 
-                p {     
-                        max-width: 75ch;
-                }
+               font-size:1.5rem;
         }
         .first-how-title{
                 color:#5e3c13e1;
@@ -62,10 +61,10 @@
       
        
         .second-how-description{
-                margin-right:5rem;
-                p {
-                        max-width: 75ch;
-                }
+                padding:2rem;
+                max-width: 75ch;
+                font-size:1.5rem;
+             
                
         }
         .second-image-how .second-image{
@@ -86,4 +85,23 @@
       
       
 }
+}
+@media (max-width:1500px) {
+        .how-it-works-page{
+                .how-it-works-container{
+                        padding:1rem;
+                  .first-row-how {flex-direction: column;
+                        .first-how-description{
+                                padding:0;
+                        }
+                align-self: left;}
+                  .second-row-how{
+                        flex-direction: column-reverse;
+                        .second-how-description{
+                                padding:0;
+                        }
+                  }
+                }
+        }
+        
 }

@@ -1,0 +1,67 @@
+.topbar{
+    position: fixed;
+  
+    top:0;
+    width:100%;
+    z-index:11;
+    
+  
+  .button-hamburger{
+  
+    position: absolute;
+    font-size: 3rem;
+    right:1rem;
+    top:.5rem;
+    z-index:12
+  
+  
+  
+  }
+  .button-close{
+    position: absolute;
+    font-size: 3rem;
+    right:1rem;
+    top:.5rem;
+    z-index: 12;
+   
+}
+ 
+       
+  }
+  @media (min-width:551px) {
+    
+.topbar{
+    display: none;
+}    
+    
+}
+
+
+
+    .mobile-nav-container{
+        animation: .3s slide-nav-left forwards;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:center;
+        height:100vh;
+        background-color: rgba(27, 27, 32, 0.956);
+        opacity:1;
+
+        
+        
+    }
+    .closed{
+        display: none;
+        transition: opacity 1s ease-out;
+        opacity: 0;
+     }
+    
+    .close-nav{
+       
+        display:none;
+      
+
+     }
+
+    

@@ -13,6 +13,8 @@ import {
   CLEAR_BILLING_INFORMATION,
   START_SUCCESS_MESSAGE,
   END_SUCCESS_MESSAGE,
+  MOBILE_NAV_HIDE,
+  MOBILE_NAV_SHOW,
 } from "./actions";
 
 const initialState = {
@@ -22,6 +24,7 @@ const initialState = {
   currentClass: "",
   billingInformation: {},
   showMessage: false,
+  showMobileNav: false,
 };
 
 const AppContext = React.createContext();
@@ -67,7 +70,12 @@ const AppProvider = ({ children }) => {
   const hideSuccessMessage = () => {
     dispatch({ type: END_SUCCESS_MESSAGE });
   };
-
+  const showNav = () => {
+    dispatch({ type: MOBILE_NAV_SHOW });
+  };
+  const hideNav = () => {
+    dispatch({ type: MOBILE_NAV_HIDE });
+  };
   return (
     <AppContext.Provider
       value={{
@@ -83,7 +91,9 @@ const AppProvider = ({ children }) => {
         addBillingInformation,
         clearBillingInformation,
         showSuccessMessage,
-        hideSuccessMessage
+        hideSuccessMessage,
+        showNav,
+        hideNav,
       }}
     >
       {children}
