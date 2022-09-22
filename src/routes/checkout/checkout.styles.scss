@@ -110,3 +110,13 @@
         width:100%;
     }   
 }
+@media (max-width:1000px){
+
+    .checkout-page{
+      flex-direction: column;
+      padding-top:5rem;
+    
+    }
+  
+   
+  }
