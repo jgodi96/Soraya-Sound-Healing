@@ -7,6 +7,9 @@ const port = process.env.PORT || 5000
 
 connectDB();
 
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
+
 app.use('/', require('./routes/testRoute.js'))
 
 app.listen(port, () => console.log(`Running on PORT ${port}`.green))
