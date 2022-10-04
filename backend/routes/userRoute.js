@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const {getTest, setTest, putTest, deleteTest} = require('../controllers/testController.js')
+const {getUser, setUser, putUser, deleteUser} = require('../controllers/userController.js')
 
 
 
@@ -8,7 +8,7 @@ const {getTest, setTest, putTest, deleteTest} = require('../controllers/testCont
 //     res.status(200).json({message : 'Isaiah'})
 // })
 
-router.get('/', getTest)
+router.get('/', getUser)
 
 
 
@@ -16,19 +16,19 @@ router.get('/', getTest)
 //     res.status(200).json({message: 'Set Goals'})
 // })
 
-router.post('/', setTest)
+router.post('/', setUser)
 
 
 // router.put('/:id', (req,res) => {
 //     res.status(200).json({message: `Update goal ${req.params.id}`})
 // })
 
-router.put('/:id', putTest)
+router.put('/:id', putUser)
 
 // router.delete('/:id', (req, res) => {
 //     res.status(200).json({message: `Delete goal ${req.params.id}`})
 // })
 
-router.delete('/:id', deleteTest)
+router.delete('/:id', deleteUser)
 
 module.exports = router;

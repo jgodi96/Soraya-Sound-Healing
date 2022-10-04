@@ -1,17 +1,15 @@
 const asyncHandler = require('express-async-handler')
-
-const router = require("../routes/testRoute");
-
+const router = require("../routes/userRoute")
 const User = require('../models/userModel.js')
 
-const getTest = asyncHandler(async (req, res) => {
+const getUser = asyncHandler(async (req, res) => {
     const users = await User.find()
     res.status(200).json(users)
 })
 
-const setTest = asyncHandler(async (req, res) => {
+const setUser = asyncHandler(async (req, res) => {
     if (!req.body.username){
-        res.status(400);
+        res.status(400)
         throw new Error('Please add a text field')
     }
     const user = await User.create({
@@ -21,7 +19,7 @@ const setTest = asyncHandler(async (req, res) => {
     res.status(200).json(user)
 })
 
-const putTest = asyncHandler(async (req, res) => {
+const putUser = asyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id)
     if(!user) {
         res.status(400)
@@ -31,7 +29,7 @@ const putTest = asyncHandler(async (req, res) => {
     res.status(200).json(updatedUser)
 })
 
-const deleteTest = asyncHandler(async (req, res) => {
+const deleteUser = asyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id)
     if(!user){
         res.status(400)
@@ -42,4 +40,4 @@ const deleteTest = asyncHandler(async (req, res) => {
     res.status(200).json({message: req.params.id})
 })
 
-module.exports = {getTest, setTest, putTest, deleteTest}
+module.exports = {getUser, setUser, putUser, deleteUser}
