@@ -1,10 +1,22 @@
 const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
-    username: {
+    firstName: {
         type: String,
-        require: [true, 'Please add a username']
+        required: [true, 'Please add a first name']
     },
+    lastName: {
+        type: String,
+        required: [true, 'Please add a last name']
+    },
+    email: {
+        type: String,
+        required: [true, 'Please add a email number'],
+    },
+    phone: {
+        type: String,
+        required: [true, 'Please add a phone number']
+    }
 }, 
 {
     timestamps: true
