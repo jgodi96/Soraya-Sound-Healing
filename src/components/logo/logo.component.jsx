@@ -1,5 +1,6 @@
 import "./logo.styles.scss";
+import logo from "../../../src/assets/logo.png";
 const Logo = () => {
-  return <h1 className="nav-logo">((O))</h1>;
+  return <img className="nav-logo" src={logo} />;
 };
 export default Logo;
