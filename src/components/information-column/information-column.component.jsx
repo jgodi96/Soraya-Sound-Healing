@@ -7,7 +7,7 @@ const InformationColumn = () => {
     <div className="information-column-container">
       <div className="location-row">
         <GrLocation />
-        <h2>Los Angeles, California</h2>
+        <h2>Long Beach, California</h2>
       </div>
       <div className="email-row">
         <GrMailOption />
