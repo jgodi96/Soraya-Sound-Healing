@@ -14,6 +14,7 @@ import NotFound from "./routes/not-found/not-found";
 import Checkout from "./routes/checkout/checkout.components";
 import Confirmation from "./routes/confirmation/confirmation.components";
 import MobileNav from "./components/mobile-nav/mobile-nav";
+import Register from './routes/register/register.component'
 
 const App = () => {
   useEffect(() => {
@@ -35,7 +36,9 @@ const App = () => {
             <Route path="book" element={<Book />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="register" element={<Register />} />
             <Route path="book/checkout" element={<Checkout />} />
+            
             <Route
               path="book/checkout/confirmation"
               element={<Confirmation />}
