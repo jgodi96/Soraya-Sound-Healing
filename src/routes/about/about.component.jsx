@@ -30,20 +30,12 @@ const About = () => {
         </div>
 
         <div className="about-p">
-          is a multi-talented artist living in Los Angeles, California. Soraya
-          has performed Sound Baths and Sound Healings in California and around
-          the US. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi quis
-          hendrerit dolor magna eget est. Convallis posuere morbi leo urna
-          molestie. Diam maecenas sed enim ut sem viverra aliquet. Sem et tortor
-          consequat id. Neque volutpat ac tincidunt vitae semper quis lectus
-          nulla. Tempor id eu nisl nunc mi ipsum faucibus vitae. In ante metus
-          dictum at tempor commodo ullamcorper a lacus. Quam lacus suspendisse
-          faucibus interdum posuere lorem ipsum dolor sit. Lobortis feugiat
-          vivamus at augue eget arcu. Non odio euismod lacinia at quis risus
-          sed. Ut enim blandit volutpat maecenas. Sed arcu non odio euismod
-          lacinia at quis. Tristique senectus et netus et malesuada fames ac
-          turpis egestas.
+        is a certified facilitator in Sound Bath Therapy and Reiki. Throughout her 4 years of studies she has traveled to different events in California and around the US with The Sound Bath Studio. This encouraged her to facilitate her own sound baths for groups in homes and wellness events. 
+
+She has also studied Visual Arts in Life Drawing and Oil Painting. Her work was featured in an Art show during her first year of studies. This experience inspired her to pursue her career as a full time Artist.
+ 
+“Art and Sound Healing brings full awareness to myself and slows me down with my surroundings. My vision is for others to experience the same through my work.” 
+
         </div>
       </div>
     </div>
