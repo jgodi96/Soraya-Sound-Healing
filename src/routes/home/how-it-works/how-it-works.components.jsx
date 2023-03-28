@@ -15,26 +15,30 @@ const HowItWorks = () => {
             <img className="first-image" src={firstAbout} />
           </div>
           <div className="first-how-description" data-aos="fade-left">
-            <h1 className="first-how-title">Description</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <h1 className="first-how-title">What is a Sound Bath?</h1>
+            Using Clinical Hypnosis, a set of techniques designed to enhance
+            concentration, used to reprogram the subconscious mind and help to
+            cope better with anxiety or pain. When under hypnosis, you put your
+            mind and body into a heightened state of learning and responsiveness
+            to suggestions to alter undesired behaviors, thoughts, feelings, and
+            psychological state. Hypnosis that is conducted by a trained
+            hypnotherapist or health care professional is considered a safe,
+            complementary, and alternative medical treatment.
           </div>
         </div>
         <div className="second-row-how">
           <div className="second-how-description" data-aos="fade-right">
-            <h1 className="second-how-title">Description</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <h1 className="second-how-title">Breath Work and Meditation</h1>
+            Mindfulness is the practice of being aware of what's going on in the
+            moment and eliciting hyper-awareness of the ​surrounding
+            environment. Studies now show with stronger evidence the positive
+            effect of meditation on depression, anxiety, and chronic pain. In
+            our experience, we can attest that meditation doesn't come easy to
+            everybody. In the past few years, we had the chance to explore and
+            develop a more ACTIVE approach to meditation that stresses the
+            attention on one of the most common anchors used in traditional
+            meditation: the breath. How can the simple act of breathing be so
+            beneficial to our body and mind?
           </div>
           <div className="second-image-how" data-aos="fade-left">
             <img className="second-image" src={secondAbout} />
