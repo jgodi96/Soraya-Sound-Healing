@@ -12,6 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.use('/api/users', require('./routes/userRoute.js'))
+app.use('/api/registerDate', require('./routes/dateRoute.js'))
 
 app.use(errorHandler)
 
