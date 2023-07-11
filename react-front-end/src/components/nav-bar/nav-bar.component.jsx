@@ -1,7 +1,9 @@
 //import {useState} from 'react'
 import { Outlet,Link } from "react-router-dom"
+import { FaRegUserCircle } from 'react-icons/fa';
 import Logo from '../logo/logo.component'
 import './nav-bar.styles.scss'
+
 
 export const NAV_TYPES_CLASSES = {
     main: "main-nav-container",
@@ -34,7 +36,7 @@ const NavBar = ({navType='main'}) => {
             <Link to='/book'>Book Now</Link>
             <Link to='/contact'>Contact</Link>
             <Link to='/about'>About</Link>
-            <Link to='/login'>Login</Link>
+            <Link to='/login'><FaRegUserCircle className="user-icon"/></Link>
             </div>
 
 
