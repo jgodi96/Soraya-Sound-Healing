@@ -16,7 +16,7 @@ const registerDate = asyncHandler(async (req, res) => {
 
     const date = await Date.create({
         availableDate: hello,
-        availableSpot: number
+        currentSpot: number
     })
 
 })

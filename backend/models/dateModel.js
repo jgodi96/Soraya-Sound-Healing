@@ -6,7 +6,7 @@ const dateSchema = mongoose.Schema({
     {
         type: String,
     },
-    availableSpot:
+    currentSpot:
     {
         type: Number
     },
