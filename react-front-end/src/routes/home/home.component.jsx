@@ -2,7 +2,7 @@ import "./home.styles.scss";
 // import MainImage from "../../assets/Main (1).jpg";
 import HowItWorks from "./how-it-works/how-it-works.components";
 
-import { FiYoutube } from "react-icons/fi";
+import { FiFacebook, FiYoutube } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
@@ -30,7 +30,7 @@ const Home = () => {
       <div className="home-wrapper">
         <section className="home-container">
           <div className="description-content">
-            <h1 className="home-title">Soraya Sound Healing</h1>
+            <h1 className="home-title">Soraya Sound Bath</h1>
             <h2 className="reiki-title">Reiki + Sound Healing</h2>
             <div className="p-wrapper">
               I welcome you just the way you are, honor where you've been, and
@@ -42,7 +42,7 @@ const Home = () => {
 
             <div className="icons-container">
               <FiYoutube className="yt" />
-              <FiTwitter className="tw" />
+              <FiFacebook className="tw" />
               <FiInstagram className="ig" />
             </div>
           </div>

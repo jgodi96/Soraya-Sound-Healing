@@ -1,6 +1,7 @@
 import LandingContent from "../../components/content/landing-content/landing-content.component";
 import "./about.styles.scss";
-import Headshot from "../../assets/headshot.png";
+
+import HealImg from "../../assets/heal.jpg";
 import { useAppContext } from "../../context/app-context";
 import { useEffect } from "react";
 const About = () => {
@@ -25,16 +26,20 @@ const About = () => {
             <h1>Godinez</h1>
           </div>
           <div className="img-container">
-            <img src={Headshot}></img>
+          <img className="heal-image" src={HealImg} />
           </div>
         </div>
 
         <div className="about-p">
-        is a certified facilitator in Sound Bath Therapy and Reiki. Throughout her 4 years of studies she has traveled to different events in California and around the US with The Sound Bath Studio. This encouraged her to facilitate her own sound baths for groups in homes and wellness events. 
-
-She has also studied Visual Arts in Life Drawing and Oil Painting. Her work was featured in an Art show during her first year of studies. This experience inspired her to pursue her career as a full time Artist.
- 
-“Art and Sound Healing brings full awareness to myself and slows me down with my surroundings. My vision is for others to experience the same through my work.” 
+        As a certified Meditation Sound Facilitator, I’ve studied and practiced many
+modalities on how to properly create therapeutic sound frequencies and
+vibrations through instruments.
+My strong interest in mental health, music, and art inspired me to further
+my growth in sound therapy. My mission is to create a safe and grounding
+space for each individual who seeks a healthier way of living.
+Throughout my 5 years of studies, I have facilitated in-home privates,
+health and wellness events, and rehabilitative service programs for
+discharged prisoners with TheSoundBathStudio.
 
         </div>
       </div>

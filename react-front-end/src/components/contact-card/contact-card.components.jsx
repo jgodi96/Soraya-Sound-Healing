@@ -31,7 +31,7 @@ const ContactCard = () => {
   const { name, email, subject, message } = values;
   return (
     <div className="contact-card-container">
-      <h3>* App in production no email will be sent*</h3>
+  
       <h1 className="contact-header">Contact Me</h1>
       <form ref={form} onSubmit={handleForm} className="contact-card">
         <InputRow>
