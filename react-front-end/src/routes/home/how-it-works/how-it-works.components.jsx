@@ -2,7 +2,9 @@ import "./how-it-works.styles.scss";
 import firstAbout from "../../../assets/howitworks.jpg";
 import secondAbout from "../../../assets/about2.jpg";
 import bowls from '../../../assets/bowls.jpg'
-
+import { Player } from 'video-react';
+import '../../../../node_modules/video-react/dist/video-react.css';
+import Video from '../../../assets/SoundPatterns.mp4'
 const HowItWorks = () => {
   return (
     <section className="how-it-works-page">
@@ -24,13 +26,12 @@ brain waves and unsettling emotions, creating a space of calm.
           </div>
         </div>
         <div className="second-row-how">
-          <div className="second-image-how" data-aos="fade-right">
-            
-            <img className="second-image" src={bowls} />
-          </div>
-          <div className="second-image-how" data-aos="fade-left">
-            <img className="second-image" src={secondAbout} />
-          </div>
+        <Player
+      playsInline
+      poster="/assets/poster.png"
+      src={Video}
+     
+    />
         </div>
       </div>
     </section>

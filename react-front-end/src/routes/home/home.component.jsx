@@ -48,7 +48,7 @@ const Home = () => {
           </div>
           <div className="down-container">
             <div className="down-label">Learn More</div>
-            <IoIosArrowDown className="down-icon" />
+            <IoIosArrowDown className="down-icon"  />
           </div>
         </section>
 
